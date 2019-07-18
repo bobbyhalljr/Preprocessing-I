@@ -1,8 +1,10 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>My Resume - Bobby Hall Jr</title>
 
@@ -14,40 +16,42 @@
 </head>
 
 <body>
-  
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="links-left">
+      <nav>
+        <a href="#intro">Intro</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </div>
+    <div class="logo">
+      <h1>Bobby Hall Jr</h1>
+    </div>
+    <div class="links-right">
+      <nav>
+        <a href="#work-history">work history</a>
+        <a href="#contact">contact</a>
+      </nav>
+    </div>
+  </div>
+  <!-- End of navbar -->
+
+  <!-- Header -->
+  <header id="intro" class="header-container">
+    <div class="header-title">
+      <img src="images/headshot.jpg" alt="Headshot picture of Bobby Hall Jr">
+      <h2>Bobby Hall Jr</h2>
+      <h3>Full Stack Web Developer</h3>
+    </div>
+    <div class="header-intro">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse quibusdam facilis libero eveniet blanditiis!</p>
+    </div>
+  </header>
+  <!-- End of header -->
+
   <div class="container">
-
-    <!-- Navbar -->
-    <div class="navbar">
-      <div class="links-left">
-        <nav>
-          <a href="#intro">Intro</a>
-          <a href="#skills">Skills</a>
-        </nav>
-      </div>
-      <div class="logo">
-        <h1>Bobby Hall Jr</h1>
-      </div>
-      <div class="links-right">
-        <nav>
-          <a href="#work-history">work-history</a>
-          <a href="#contact">contact</a>
-        </nav>
-      </div>
-    </div><!-- End of navbar -->
-
-    <!-- Header -->
-    <header id="intro" class="header-container">
-      <div class="header-title">
-        <img src="images/headshot.jpg" alt="Headshot picture of Bobby Hall Jr">
-        <h2>Title</h2>
-        <h3>Sub-title</h3>
-      </div>
-      <div class="header-intro">
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum esse quibusdam facilis libero eveniet blanditiis!</p>
-      </div>
-    </header><!-- End of header -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
@@ -63,16 +67,83 @@
       </div>
       <div class="fav-quote">
         <h1>My favorite quote</h1>
-        <p><em>"This is my favorite quote don't forget it!"</em>- Bobby Hall Jr</p>
+        <p>
+          <em>"This is my favorite quote don't forget it!"</em>- Bobby Hall Jr</p>
       </div>
-    </section><!-- End of skills section -->
+    </section>
+    <!-- End of skills section -->
 
     <!-- Work History -->
     <section id="work-history" class="work-history">
-      
-    </section><!-- End of work history section -->
+      <h1>Work History</h1>
+      <div class="work">
+        <h2>Target (4 years)</h2>
+        <p>2010 - 2014</p>
+      </div>
+      <div class="work">
+        <h2>Against the grain gourment (4 years)</h2>
+        <p>2014 - 2019</p>
+      </div>
+      <div class="work">
+        <h2>Lambda School (Full stack web development)</h2>
+        <p>2019 -</p>
+      </div>
+    </section>
+    <!-- End of work history section -->
 
-  </div> <!-- End of container -->
+    <!-- Contact section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-title">
+        <h1>Contact Me</h1>
+        <img src="images/headshot.jpg" alt="A picture of bobby hall jr">
+        <p>Whether your looking to hire me or just collaborate on a project use this form to contact me.</p>
+        <div class="social-links">
+          <a href="#">Linkedin</a>
+          <a href="#">Github</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Email</a>
+        </div>
+      </div>
+      <!-- Form -->
+      <form class="form" action="#" method="post">
+        <div>
+          <label for="name"></label>
+          <input type="text" placeholder="Name:" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="contact"></label>
+          <div class="custom-select" width="2rem">
+            <select name="contact">
+              <option value="#">Choose one:</option>
+              <option value="hire">Hire Me</option>
+              <option value="collab">Collaborate</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="msg"></label>
+          <textarea id="msg" placeholder="Message:" name="user_message"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Send message</button>
+        </div>
+      </form>
+    </section>
+    <!-- End of contact section -->
+  
+  </div>
+  <!-- End of container -->
+
+  <!-- Footer section -->
+  <footer>
+      <div class="copyright">
+        <p>&copy; Bobby Leon Hall Jr
+          <br />Made with ❤️ and 💻</p>
+      </div>
+    </footer>
+    <!-- End of footer -->
 
 </body>
+
 </html>
